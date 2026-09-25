@@ -31,8 +31,13 @@ async function watchMovie(id) {
   };
 }
 
+async function getmovieDetail(id) {
+  return movieApiClient.getMovieDetail(id)
+}
+
 module.exports = {
   getMovies,
   getMovie,
   watchMovie,
+  getmovieDetail
 };

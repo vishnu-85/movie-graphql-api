@@ -20,7 +20,13 @@ async function getMovieById(id) {
   return movies.find((movie) => String(movie.id) === String(id));
 }
 
+async function getMovieDetail(id) { 
+  return  {Desc: "Hello World", year: "2505", id: id}
+}
+
+
 module.exports = {
   getMovies,
   getMovieById,
+  getMovieDetail
 };

@@ -1,10 +1,17 @@
 const typeDefs = `#graphql
 
+  type MovieDetail{
+    id: ID!
+    year: String
+    Desc: String
+  }
+
   type Movie {
     id: ID!
     title: String
     posterURL: String
     imdbId: String
+    movieDetail: MovieDetail
   }
 
   type WatchMovie {
